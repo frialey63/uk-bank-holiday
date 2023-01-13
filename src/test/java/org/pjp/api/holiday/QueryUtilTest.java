@@ -31,9 +31,11 @@ public class QueryUtilTest extends TestCase {
 
     /**
      * Test case for org.pjp.api.holiday.QueryUtil.getHolidays(Division, int).
+     *
+     * Note extra bank holiday due to death of QEII.
      */
     public void testGetHolidays() {
-        assertEquals(9, util.getHolidays(Division.ENGLAND_AND_WALES, 2022).size());
+        assertEquals(10, util.getHolidays(Division.ENGLAND_AND_WALES, 2022).size());
     }
 
 }
